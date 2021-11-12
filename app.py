@@ -25,7 +25,7 @@ class StreamlitApp:
             
     
     def run(self):
-        image = Image.open('assets/hus.jpg')
+        image = Image.open('assets/house.jpg')
         st.image(image, use_column_width=False)
     
     
