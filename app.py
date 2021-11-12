@@ -51,10 +51,10 @@ class StreamlitApp:
                                                          'NridgHt', 'NWAmes', 'OldTown','SWISU', 'Sawyer', 
                                                          'SawyerW', 'Somerst', 'StoneBr', 'Timber', 'Veenker', 'Up', 'Down'])
             Functional = st.selectbox('Home functionality rating', ['Typ', 'Min1', 'Min2', 'Mod', 'Maj1', 'Maj2', 'Sev', 'Sal'])
-            GarageCars =st.number_input('Size of garage in car capacity', min_value=0.0, max_value=10.0, value=1.0)
+            GarageCars =st.number_input('Size of garage in car capacity', min_value=0, max_value=10, value=1)
             GarageArea = st.number_input('Size of garage in square feet', min_value=0.0, max_value=2000.0, value=1000.0)
             TotRmsAbvGrd = st.number_input('Total rooms above grade (does not include bathrooms)', min_value=0.0, max_value=30.0, value=6.0)
-            Fireplaces = st.number_input('Number of fireplaces', min_value=0.0, max_value=5.0, value=1.0)
+            Fireplaces = st.number_input('Number of fireplaces', min_value=0, max_value=5, value=1)
             YearBuilt = st.number_input('Original construction date', min_value=1800, max_value=2021, value=1980)
             PoolArea = st.number_input('Pool area in square feet', min_value=0.0, max_value=1000.0, value=500.0)
             PoolQC=st.selectbox('Pool quality', ['Gd', 'TA', 'Fa', 'NA'])
