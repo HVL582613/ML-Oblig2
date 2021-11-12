@@ -118,7 +118,7 @@ class StreamlitApp:
             TwondFlrSF=st.number_input('Second floor square feet', min_value=0, max_value=3000, value=300)
             OnestFlrSF=st.number_input('First Floor square feet', min_value=100, max_value=6000, value=400)
             Electrical=st.selectbox('Electrical system', ['SBrkr', 'FuseA', 'FuseF', 'FuseP', 'Mix'])
-            CentralAir=st.selectbox('Central air conditioning', ['N', 'Y'])
+            CentralAir=st.selectbox('Central air conditioning', ['No', 'Yes'])
          
             
             
