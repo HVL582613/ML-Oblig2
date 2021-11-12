@@ -36,7 +36,7 @@ class StreamlitApp:
         
        
         if add_selectbox == 'Online':
-            OverallQual = st.number_input('OverallQual', min_value=1, max_value=10, value=5)
+            OverallQual = st.number_input('Overall material and finish quality', min_value=1, max_value=10, value=5)
             MSZoning = st.selectbox('MSZoning', ['A', 'C', 'FV', 'I', 'RH', 'RL', 'RP','RM'])
             GrLivArea = st.number_input('GrLivArea', min_value=300, max_value=6000, value=1500)
             OverallCond = st.number_input('OverallCond', min_value=1, max_value=9, value=5)           
