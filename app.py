@@ -85,9 +85,9 @@ class StreamlitApp:
             ExterQual=st.selectbox('Exterior material quality', ['Excellent', 'Good', 'Average/Typical', 'Fair', 'Poor'])
             ExterCond=st.selectbox('Present condition of the material on the exterior', ['Excellent', 'Good', 'Average/Typical', 'Fair', 'Poor'])
             Foundation=st.selectbox('Type of foundation', ['Brick and Tile', 'Cinder Block', 'Poured Concrete', 'Slab', 'Stone', 'Wood'])
-            BsmtQual=st.selectbox('Height of the basement', ['Excellent(100+)', 'Good(90-99)', 'Average/Typical(80-89)', 'Fair(70-79)', 'Poor(<70)', 
+            BsmtQual=st.selectbox('Height of the basement(Inches)', ['Excellent(100+)', 'Good(90-99)', 'Average/Typical(80-89)', 'Fair(70-79)', 'Poor(<70)', 
                                                                                 'No Basement'])
-            BsmtCond=st.selectbox('General condition of the basement(Inches)', ['Excellent', 'Good', 'Typical - slight dampness allowed', 
+            BsmtCond=st.selectbox('General condition of the basement', ['Excellent', 'Good', 'Typical - slight dampness allowed', 
                                                                                 'Fair - dampness or some cracking or settling', 'Poor - Severe cracking, settling, or wetness', 
                                                                                 'No Basement'])
             BsmtExposure=st.selectbox('Walkout or garden level basement walls', ['Good exposure', 'Average Exposure (split levels or foyers typically score average or above)', 
