@@ -32,6 +32,7 @@ class StreamlitApp:
         add_selectbox = st.sidebar.selectbox('How would you like to predict?', ('Online', 'Batch'))  
         st.sidebar.info('This app is created to predict house prices in Ames, Iowa' )
         st.sidebar.success('DAT158 - ML Oblig 2, by Karl-Magnus and Bernt Otto')
+        st.sidebar.success('Link to kaggle where all the abbreviations are explained: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data')
         st.title('Housing Prices')
         
        
