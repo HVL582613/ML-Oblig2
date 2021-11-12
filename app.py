@@ -75,7 +75,9 @@ class StreamlitApp:
                                                                            'Adjacent to East-West Railroad'])
             BldgType=st.selectbox('Type of dwelling', ['Single-family Detached', 'Two-family Conversion; originally built as one-family dwelling', 
                                                        'Duplex', 'Townhouse End Unit', 'Townhouse Inside Unit'])
-            HouseStyle=st.selectbox('Style of dwelling', ['1Story', '1 .5Fin', '1 .5Unf', '2Story', '2 .5Fin', '2 .5Unf', 'SFoyer', 'SLvl'])
+            HouseStyle=st.selectbox('Style of dwelling', ['One Story', 'One and one-half story: 2nd level finished', 'One and one-half story: 2nd level unfinished', 
+                                                          'Two Story', 'Two and one-half story: 2nd level finished', 'Two and one-half story: 2nd level unfinished', 
+                                                          'Split Foyer', 'Split Level'])
             YearBuilt = st.number_input('Original construction date', min_value=1800, max_value=2021, value=1980)
             YearRemodAdd=st.number_input('Remodel date (same as construction date if no remodeling or additions)', min_value=1800, max_value=2021, value=1980)
             RoofStyle=st.selectbox('Type of roof', ['Flat', 'Gable', 'Gabrel(Barn)', 'Hip', 'Mansard', 'Shed'])
