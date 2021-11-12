@@ -30,7 +30,7 @@ class StreamlitApp:
     
     
         add_selectbox = st.sidebar.selectbox('How would you like to predict?', ('Online', 'Batch'))  
-        st.sidebar.info('This app is created to predict houseprices' )
+        st.sidebar.info('This app is created to predict house prices in Ames, Iowa' )
         st.sidebar.success('DAT158')
         st.title('Housing Prices')
         
