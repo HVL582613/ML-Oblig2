@@ -190,19 +190,24 @@ class StreamlitApp:
             
             
             output=''
-            input_dict = {'OverallQual':OverallQual, 'MSZoning':MSZoning, 'GrLivArea':GrLivArea, 'OverallCond':OverallCond, 
-                          'GarageType':GarageType, 'LandSlope':LandSlope, 'FullBath':FullBath, 'Neighborhood':Neighborhood, 
-                          'Functional':Functional, 'MSSubClass':MSSubClass, 'LotFrontage':LotFrontage, 'LotArea':LotArea, 'Street':Street,'Alley':Alley,
-                          'LotShape':LotShape,'LandContour':LandContour,'Utilities':Utilities,'LotConfig':LotConfig,'Condition1': Condition1,
+            input_dict = {'MSSubClass':MSSubClass, 'GrLivArea':GrLivArea,'OverallCond':OverallCond, 'OverallQual':OverallQual, 'MSZoning':MSZoning,
+                          'LotFrontage':LotFrontage, 'LotArea':LotArea, 'Street':Street,'Alley':Alley, 'LotShape':LotShape, 'LandContour':LandContour,
+                          'Utilities':Utilities, 'LotConfig':LotConfig, 'LandSlope':LandSlope,  'Neighborhood':Neighborhood, 'Condition1': Condition1,
                           'Condition2': Condition2,'BldgType':BldgType,'HouseStyle':HouseStyle,'YearBuilt':YearBuilt,'YearRemodAdd':YearRemodAdd,'RoofStyle':RoofStyle,
                           'RoofMatl':RoofMatl,'Exterior1st':Exterior1st ,'Exterior2nd':Exterior2nd,'MasVnrType':MasVnrType,'MasVnrArea':MasVnrArea,'ExterQual':ExterQual,
                           'ExterCond':ExterCond,'Foundation':Foundation,'BsmtQual':BsmtQual,'BsmtCond':BsmtCond,'BsmtExposure':BsmtExposure,'BsmtFinType1':BsmtFinType1,
-                          'BsmtFinSF1':BsmtFinSF1,'BsmtFinType2':BsmtFinType2,'BsmtFinSF2':BsmtFinSF2,'BsmtUnfSF':BsmtUnfSF,'TotalBsmtSF':TotalBsmtSF,'Heating':Heating,'HeatingQC':HeatingQC, 
-                          'CentralAir':CentralAir,'Electrical':Electrical,'1stFlrSF':OnestFlrSF, '2ndFlrSF':TwondFlrSF,'LowQualFinSF':LowQualFinSF,'BsmtFullBath':BsmtFullBath,'BsmtHalfBath':BsmtHalfBath,
-                          'HalfBath':HalfBath,'BedroomAbvGr':BedroomAbvGr,'KitchenAbvGr':KitchenAbvGr,'KitchenQual':KitchenQual,'TotRmsAbvGrd':TotRmsAbvGrd, 'Fireplaces':Fireplaces,'FireplaceQu':FireplaceQu,
-                          'GarageYrBlt':GarageYrBlt, 'GarageFinish':GarageFinish,'GarageCars':GarageCars, 'GarageArea':GarageArea, 'GarageQual':GarageQual,'GarageCond':GarageCond,'PavedDrive':PavedDrive,
-                          'WoodDeckSF':WoodDeckSF,'OpenPorchSF':OpenPorchSF,'EnclosedPorch':EnclosedPorch,'3SsnPorch':SsnPorch,'ScreenPorch':ScreenPorch,'PoolArea':PoolArea,'PoolQC':PoolQC,'Fence':Fence,
-                          'MiscFeature':MiscFeature,'MiscVal':MiscVal, 'MoSold':MoSold, 'YrSold':YrSold, 'SaleType':SaleType,'SaleCondition':SaleCondition}
+                          'BsmtFinSF1':BsmtFinSF1,'BsmtFinType2':BsmtFinType2,'BsmtFinSF2':BsmtFinSF2,'BsmtUnfSF':BsmtUnfSF,'TotalBsmtSF':TotalBsmtSF,'Heating':Heating,'HeatingQC':HeatingQC,
+                          'CentralAir':CentralAir,'Electrical':Electrical,'1stFlrSF':OnestFlrSF, '2ndFlrSF':TwondFlrSF,'LowQualFinSF':LowQualFinSF, 'FullBath':FullBath, 'HalfBath':HalfBath,
+                          'BsmtHalfBath':BsmtHalfBath, 'BsmtFullBath':BsmtFullBath, 'KitchenAbvGr':KitchenAbvGr,'KitchenQual':KitchenQual,'TotRmsAbvGrd':TotRmsAbvGrd, 'BedroomAbvGr':BedroomAbvGr,
+                          'Functional':Functional, 'Fireplaces':Fireplaces,'FireplaceQu':FireplaceQu, 'GarageType':GarageType, 'GarageCond':GarageCond, 'GarageQual':GarageQual,
+                          'GarageFinish':GarageFinish, 'GarageYrBlt':GarageYrBlt,'GarageCars':GarageCars, 'GarageArea':GarageArea,'PavedDrive':PavedDrive, 
+                          'WoodDeckSF':WoodDeckSF,'OpenPorchSF':OpenPorchSF,'EnclosedPorch':EnclosedPorch, 'ScreenPorch':ScreenPorch, '3SsnPorch':SsnPorch, 'PoolArea':PoolArea,'PoolQC':PoolQC,
+                          'Fence':Fence, 'MiscFeature':MiscFeature,'MiscVal':MiscVal, 'YrSold':YrSold, 'MoSold':MoSold, 'SaleType':SaleType,'SaleCondition':SaleCondition}
+                          
+                       
+                          
+                          
+                            
            
             input_df = pd.DataFrame(input_dict, index=[0])
         
