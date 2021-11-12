@@ -38,7 +38,8 @@ class StreamlitApp:
        
         if add_selectbox == 'Online':
             OverallQual = st.number_input('Overall material and finish quality', min_value=1, max_value=10, value=5)
-            MSZoning = st.selectbox('The general zoning classification', ['Agriculture', 'C', 'FV', 'I', 'RH', 'RL', 'RP','RM'])
+            MSZoning = st.selectbox('The general zoning classification', ['Agriculture', 'Commercial', 'Floating Village Residential', 'Idustrial', 'Residential Density', 
+                                                                          'RL', 'RP','RM'])
             GrLivArea = st.number_input('Above grade (ground) living area square feet', min_value=300, max_value=6000, value=1500)
             OverallCond = st.number_input('Overall condition rating', min_value=1, max_value=9, value=5)           
             GarageType = st.selectbox('Garage location', ['2Types', 'Attchd', 'Basment', 'BuiltIn', 'CarPort', 'Detchd', 'NA'])
